@@ -99,6 +99,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml (~> 5.1)
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   tzinfo-data

@@ -5,6 +5,11 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# Config
+# https://middlemanapp.com/advanced/configuration/
+
+config[:frontmatter_delims][:yaml] << %w(... ...)
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
