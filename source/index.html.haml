@@ -1,14 +1,12 @@
-...
-title: 'Free Domain Zones'
-...
-
 - filter ||= nil
 
 - case filter
 - when '1-level'
   - filter_callback = Proc.new { |name| /^(\.\w+)$/.match(name) }
+  - @title = 'Free TLDs'
 - when '2-level'
   - filter_callback = Proc.new { |name| /^(\.\w+){1,2}$/.match(name) }
+  - @title = 'Free Second Level Domains'
 - else nil
   - filter_callback = Proc.new { true }
 
