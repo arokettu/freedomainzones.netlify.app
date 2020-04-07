@@ -11,13 +11,14 @@ title: 'Free Domain Names'
         %th Custom DNS
         %th Service
     %tbody
-      - data.zones.each do |name, zone|
+      - data.zones.keys.sort.each do |name|
+        - zone = data.zones[name]
         - service = data.services[zone.service]
         %tr
           %td
             = name
           %td
-            = (service.record_types || []).join(', ')
+            = service.record_types ? service.record_types.join(', ') : 'no ns servers provided'
           %td
             - if service.custom_ns
               ☑

@@ -1,5 +1,10 @@
 freenom:
-  name: Freenom
-  url:  https://www.freenom.com/
-  custom_ns: true
+  name:         Freenom
+  url:          https://www.freenom.com/
+  custom_ns:    true
   record_types: [A, AAAA, CNAME, LOC, MX, NAPTR, RP, TXT]
+
+nic.eu.org:
+  name:         nic.eu.org
+  url:          https://nic.eu.org/
+  custom_ns:    true

@@ -10,3 +10,111 @@
   service: freenom
 .gq:
   service: freenom
+
+# nic.eu.org
+.eu.org:
+  service: nic.eu.org
+.asso.eu.org:
+  service: nic.eu.org
+.edu.eu.org:
+  service: nic.eu.org
+.int.eu.org:
+  service: nic.eu.org
+.net.eu.org:
+  service: nic.eu.org
+.at.eu.org:
+  service: nic.eu.org
+.be.eu.org:
+  service: nic.eu.org
+.bg.eu.org:
+  service: nic.eu.org
+.cy.eu.org:
+  service: nic.eu.org
+.cz.eu.org:
+  service: nic.eu.org
+.de.eu.org:
+  service: nic.eu.org
+.dk.eu.org:
+  service: nic.eu.org
+.ee.eu.org:
+  service: nic.eu.org
+.es.eu.org:
+  service: nic.eu.org
+.fi.eu.org:
+  service: nic.eu.org
+.fr.eu.org:
+  service: nic.eu.org
+.gr.eu.org:
+  service: nic.eu.org
+.hr.eu.org:
+  service: nic.eu.org
+.hu.eu.org:
+  service: nic.eu.org
+.ie.eu.org:
+  service: nic.eu.org
+.in.eu.org:
+  service: nic.eu.org
+.it.eu.org:
+  service: nic.eu.org
+.lt.eu.org:
+  service: nic.eu.org
+.lu.eu.org:
+  service: nic.eu.org
+.lv.eu.org:
+  service: nic.eu.org
+.mt.eu.org:
+  service: nic.eu.org
+.nl.eu.org:
+  service: nic.eu.org
+.pl.eu.org:
+  service: nic.eu.org
+.pt.eu.org:
+  service: nic.eu.org
+.ro.eu.org:
+  service: nic.eu.org
+.se.eu.org:
+  service: nic.eu.org
+.si.eu.org:
+  service: nic.eu.org
+.sk.eu.org:
+  service: nic.eu.org
+.uk.eu.org:
+  service: nic.eu.org
+.al.eu.org:
+  service: nic.eu.org
+.ch.eu.org:
+  service: nic.eu.org
+.is.eu.org:
+  service: nic.eu.org
+.me.eu.org:
+  service: nic.eu.org
+.mk.eu.org:
+  service: nic.eu.org
+.no.eu.org:
+  service: nic.eu.org
+.ru.eu.org:
+  service: nic.eu.org
+.tr.eu.org:
+  service: nic.eu.org
+.au.eu.org:
+  service: nic.eu.org
+.ca.eu.org:
+  service: nic.eu.org
+.cd.eu.org:
+  service: nic.eu.org
+.cn.eu.org:
+  service: nic.eu.org
+.il.eu.org:
+  service: nic.eu.org
+.jp.eu.org:
+  service: nic.eu.org
+.kr.eu.org:
+  service: nic.eu.org
+.my.eu.org:
+  service: nic.eu.org
+.ng.eu.org:
+  service: nic.eu.org
+.nz.eu.org:
+  service: nic.eu.org
+.us.eu.org:
+  service: nic.eu.org
