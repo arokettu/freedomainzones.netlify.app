@@ -1,3 +1,5 @@
 freenom:
   name: Freenom
   url:  https://www.freenom.com/
+  custom_ns: true
+  record_types: [A, AAAA, CNAME, LOC, MX, NAPTR, RP, TXT]

@@ -7,6 +7,8 @@ title: 'Free Domain Names'
     %thead
       %tr
         %th Zone
+        %th NS Records
+        %th Custom DNS
         %th Service
     %tbody
       - data.zones.each do |name, zone|
@@ -14,5 +16,12 @@ title: 'Free Domain Names'
         %tr
           %td
             = name
+          %td
+            = (service.record_types || []).join(', ')
+          %td
+            - if service.custom_ns
+              ☑
+            - else
+              ☐
           %td
             = link_to service.name, service.url
