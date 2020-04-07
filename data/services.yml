@@ -21,6 +21,9 @@ pp.ua:
   url:          http://pp.ua/
   custom_ns:    true
   record_types: ["depends on a final registrar"]
+  notes:
+    A private person zone of Ukraine.
+    Several accredited registrars available.
 
 venez:
   name:         venez.fr
@@ -29,7 +32,7 @@ venez:
   notes:
     Regional restrictions.
     Only french interface.
-    Record can only be set after a week.
+    Records can only be set after a week.
 
 nom.za:
   name:         nom.za
@@ -40,3 +43,5 @@ ipquick:
   name:         IPQuick
   url:          https://www.ipq.co/
   record_types: [A, AAAA]
+  notes:
+    You can only set one IP once, no editing.

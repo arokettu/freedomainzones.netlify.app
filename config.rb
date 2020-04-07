@@ -34,6 +34,12 @@ page '/*.txt', layout: false
   }
 end
 
+data.services.keys.each do |service|
+  proxy "/services/#{service}.html", '/services.html', locals: {
+      service_name: service,
+  }, ignore: true
+end
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/

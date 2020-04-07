@@ -1,4 +1,5 @@
 - filter ||= nil
+- @index = true
 
 - case filter
 - when '1-level'
@@ -49,14 +50,11 @@
         - zone = data.zones[name]
         - service = data.services[zone.service]
         %tr
-          %td
-            = name
-          %td
-            = service.record_types ? service.record_types.join(', ') : '-'
+          %td= name
+          %td= service.record_types ? service.record_types.join(', ') : '-'
           %td
             - if service.custom_ns
               ☑
             - else
               ☐
-          %td
-            = link_to service.name + ' ↗', service.url
+          %td= link_to service.name, "/services/#{zone.service}.html"

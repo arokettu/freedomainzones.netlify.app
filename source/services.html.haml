@@ -1,3 +1,21 @@
-...
-title: 'Free Domain Zones'
-...
+- service = data.services[service_name]
+- @title = service.name
+
+.ui.container
+  %table.ui.celled.definition.table
+    %tr
+      %td URL
+      %td= link_to service.url
+    %tr
+      %td Available zones
+      %td= data.zones.filter{ |_, zone| zone.service == service_name }.keys.join(', ')
+    %tr
+      %td Available NS record types
+      %td= service.record_types ? service.record_types.join(', ') : 'none'
+    %tr
+      %td External DNS
+      %td= service.custom_ns ? 'yes' : 'no'
+    - if service.notes
+      %tr
+        %td Notes
+        %td= service.notes

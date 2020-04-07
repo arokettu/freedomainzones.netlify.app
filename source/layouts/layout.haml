@@ -14,7 +14,8 @@
   %body
     .ui.container
       %h1.ui.dividing.header
-        = current_page.data.title || "Free Domain Zones"
+        = @title || "Free Domain Zones"
+      = link_to 'Back to index', '/' unless @index
     = yield
     .ui.container.footer
       &copy; 2020,
@@ -24,3 +25,5 @@
       = link_to 'Creative Commons Attribution 4.0 International License.', 'https://creativecommons.org/licenses/by/4.0/'
       %br
       = link_to 'Our GitLab repository', 'https://gitlab.com/sandfox/freedomainzones.netlify.app'
+      %br
+      = Time.now.utc.strftime('Built on %b %-d, %Y at %k:%M UTC')
