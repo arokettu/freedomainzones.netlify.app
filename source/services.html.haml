@@ -5,7 +5,7 @@
   %table.ui.celled.definition.table
     %tr
       %td URL
-      %td= link_to service.url
+      %td= link_to service.url, service.url
     %tr
       %td Available zones
       %td= data.zones.filter{ |_, zone| zone.service == service_name }.keys.join(', ')
