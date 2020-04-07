@@ -35,3 +35,8 @@ nom.za:
   name:         nom.za
   url:          https://secure.nom.za/
   custom_ns:    true
+
+ipquick:
+  name:         IPQuick
+  url:          https://www.ipq.co/
+  record_types: [A, AAAA]

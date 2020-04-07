@@ -176,3 +176,9 @@
 # nom.za
 .nom.za:
   service: nom.za
+
+# ipquick
+.ipq.co:
+  service: ipquick
+.fdns.uk:
+  service: ipquick
