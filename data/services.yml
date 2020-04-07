@@ -15,3 +15,9 @@ iz.rs:
   custom_ns:    true
   notes:
     Only serbian interface.
+
+pp.ua:
+  name:         pp.ua
+  url:          http://pp.ua/
+  custom_ns:    true
+  record_types: ["depends on a final registrar"]

@@ -122,3 +122,7 @@
 # iz.rs
 .iz.rs:
   service: iz.rs
+
+# pp.ua
+.pp.ua:
+  service: pp.ua
