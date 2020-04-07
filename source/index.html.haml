@@ -1,5 +1,18 @@
 ...
-title: "Test page!"
+title: 'Free Domain Names'
 ...
 
-Test page!
+.ui.container
+  %table.ui.celled.table
+    %thead
+      %tr
+        %th Zone
+        %th Service
+    %tbody
+      - data.zones.each do |name, zone|
+        - service = data.services[zone.service]
+        %tr
+          %td
+            = name
+          %td
+            = link_to service.name, service.url

@@ -7,3 +7,6 @@
 .DS_Store
 .sass-cache
 build/
+
+# js
+/node_modules

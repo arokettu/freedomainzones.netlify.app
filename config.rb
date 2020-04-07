@@ -9,6 +9,7 @@ end
 # https://middlemanapp.com/advanced/configuration/
 
 config[:frontmatter_delims][:yaml] << %w(... ...)
+config[:sass_assets_paths] << File.dirname(__FILE__) + '/node_modules'
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
