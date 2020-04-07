@@ -126,3 +126,49 @@
 # pp.ua
 .pp.ua:
   service: pp.ua
+
+# venez
+.ch.ma:
+  service: venez
+.venez.fr:
+  service: venez
+.be.ma:
+  service: venez
+.viens.la:
+  service: venez
+.gaming.cx:
+  service: venez
+.ass0.fr:
+  service: venez
+.c0m.at:
+  service: venez
+.c4.fr:
+  service: venez
+.fr.mu:
+  service: venez
+.sarl.tk:
+  service: venez
+.0rg.fr:
+  service: venez
+.no-ip.be:
+  service: venez
+.vu.cx:
+  service: venez
+.zik.dj:
+  service: venez
+.fr.ht:
+  service: venez
+.no-ip.fr:
+  service: venez
+.ht.cx:
+  service: venez
+.lachezvos.com:
+  service: venez
+.qc.cx:
+  service: venez
+.xl.cx:
+  service: venez
+.ze.tc:
+  service: venez
+.1s.fr:
+  service: venez

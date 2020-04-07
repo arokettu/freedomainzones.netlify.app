@@ -21,3 +21,12 @@ pp.ua:
   url:          http://pp.ua/
   custom_ns:    true
   record_types: ["depends on a final registrar"]
+
+venez:
+  name:         venez.fr
+  url:          https://www.venez.fr/
+  record_types: [A]
+  notes:
+    Regional restrictions.
+    Only french interface.
+    Record can only be set after a week.
