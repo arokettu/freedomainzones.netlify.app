@@ -2,7 +2,37 @@
 title: 'Free Domain Names'
 ...
 
+- filter ||= nil
+
+- case filter
+- when '1-level'
+  - filter_callback = Proc.new { |name| /^(\.\w+)$/.match(name) }
+- when '2-level'
+  - filter_callback = Proc.new { |name| /^(\.\w+){1,2}$/.match(name) }
+- else nil
+  - filter_callback = Proc.new { true }
+
 .ui.container
+  %p
+    - if filter == nil
+      All
+    - else
+      = link_to 'All', '/index.html'
+
+    &bull;
+
+    - if filter == '1-level'
+      Only top level domains
+    - else
+      = link_to 'Only top level domains', '/filtered/1-level.html'
+
+    &bull;
+
+    - if filter == '2-level'
+      Up to 2 level domains
+    - else
+      = link_to 'Up to 2 level domains', '/filtered/2-level.html'
+
   %table.ui.celled.table
     %thead
       %tr
@@ -11,7 +41,7 @@ title: 'Free Domain Names'
         %th Custom DNS
         %th Service
     %tbody
-      - data.zones.keys.sort.each do |name|
+      - data.zones.keys.select(&filter_callback).sort.each do |name|
         - zone = data.zones[name]
         - service = data.services[zone.service]
         %tr
