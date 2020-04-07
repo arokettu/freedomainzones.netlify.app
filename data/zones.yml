@@ -118,3 +118,7 @@
   service: nic.eu.org
 .us.eu.org:
   service: nic.eu.org
+
+# iz.rs
+.iz.rs:
+  service: iz.rs

@@ -8,3 +8,10 @@ nic.eu.org:
   name:         nic.eu.org
   url:          https://nic.eu.org/
   custom_ns:    true
+
+iz.rs:
+  name:         iz.rs
+  url:          https://www.iz.rs/
+  custom_ns:    true
+  notes:
+    Only serbian interface.
