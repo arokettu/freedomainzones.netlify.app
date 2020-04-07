@@ -5,7 +5,7 @@ freenom:
   record_types: [A, AAAA, CNAME, LOC, MX, NAPTR, RP, TXT]
 
 nic.eu.org:
-  name:         nic.eu.org
+  name:         EU.org
   url:          https://nic.eu.org/
   custom_ns:    true
 
