@@ -39,7 +39,7 @@ title: 'Free Domain Zones'
     - else
       = link_to 'Up to 2 level domains', '/filtered/2-level.html'
 
-  %table.ui.celled.table
+  %table.ui.celled.table.unstackable
     %thead
       %tr
         %th Zone
@@ -54,7 +54,7 @@ title: 'Free Domain Zones'
           %td
             = name
           %td
-            = service.record_types ? service.record_types.join(', ') : 'no ns servers provided'
+            = service.record_types ? service.record_types.join(', ') : '-'
           %td
             - if service.custom_ns
               ☑
