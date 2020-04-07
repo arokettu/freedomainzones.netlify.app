@@ -1,2 +1,12 @@
-tk:
+# freenom
+
+.tk:
+  service: freenom
+.ml:
+  service: freenom
+.ga:
+  service: freenom
+.cf:
+  service: freenom
+.gq:
   service: freenom
