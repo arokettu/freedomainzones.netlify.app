@@ -30,3 +30,8 @@ venez:
     Regional restrictions.
     Only french interface.
     Record can only be set after a week.
+
+nom.za:
+  name:         nom.za
+  url:          https://secure.nom.za/
+  custom_ns:    true

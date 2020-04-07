@@ -172,3 +172,7 @@
   service: venez
 .1s.fr:
   service: venez
+
+# nom.za
+.nom.za:
+  service: nom.za
