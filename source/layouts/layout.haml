@@ -13,3 +13,11 @@
       %h1.ui.dividing.header
         = current_page.data.title || "Free Domain Zones"
     = yield
+    .ui.container.footer
+      &copy; 2020,
+      = link_to 'Anton Smirnov', 'https://sandfox.me/'
+      %br
+      This work is licensed under a
+      = link_to 'Creative Commons Attribution 4.0 International License.', 'https://creativecommons.org/licenses/by/4.0/'
+      %br
+      = link_to 'Our GitLab repository', 'https://gitlab.com/sandfox/freedomainzones.netlify.app'
