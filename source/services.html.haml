@@ -11,9 +11,13 @@
       %td= data.zones.filter{ |_, zone| zone.service == service_name }.keys.join(', ')
     %tr
       %td Available NS record types
-      %td= service.record_types ? service.record_types.join(', ') : 'none'
+      - if service.record_types
+        %td= service.record_types.join(', ')
+      - else
+        %td
+          %i none (only external servers)
     %tr
-      %td External DNS
+      %td External DNS servers
       %td= service.custom_ns ? 'yes' : 'no'
     - if service.notes
       %tr

@@ -4,11 +4,12 @@
 - case filter
 - when '1-level'
   - filter_callback = Proc.new { |name| /^(\.\w+)$/.match(name) }
-  - @title = 'Free TLDs'
+  - @title = 'Free Top Level Zones'
 - when '2-level'
+  - @title = 'Free Second Level Zones'
   - filter_callback = Proc.new { |name| /^(\.\w+){1,2}$/.match(name) }
-  - @title = 'Free Second Level Domains'
 - when 'any-level'
+  - @title = 'All Free Zones'
   - filter_callback = Proc.new { true }
 - else
   - raise 'Unknown filter'
@@ -45,7 +46,7 @@
       %tr
         %th Zone
         %th NS Records
-        %th Custom DNS
+        %th External DNS
         %th Service
     %tbody
       - data.zones.keys.select(&filter_callback).sort.each do |name|
@@ -53,10 +54,13 @@
         - service = data.services[zone.service]
         %tr
           %td= name
-          %td= service.record_types ? service.record_types.join(', ') : '-'
-          %td
-            - if service.custom_ns
-              ☑
-            - else
-              ☐
+          - if service.record_types
+            %td= service.record_types.join(', ')
+          - else
+            %td
+              %i none (only external servers)
+          - if service.custom_ns
+            %td.yes ✓
+          - else
+            %td.no ✗
           %td= link_to service.name, "/services/#{zone.service}.html"

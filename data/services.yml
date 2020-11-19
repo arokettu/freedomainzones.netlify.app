@@ -20,7 +20,7 @@ pp.ua:
   name:         pp.ua
   url:          http://pp.ua/
   custom_ns:    true
-  record_types: ["depends on a final registrar"]
+  record_types: ["<i>depends on a final registrar</i>"]
   notes:
     A private person zone of Ukraine.
     Several accredited registrars available.
