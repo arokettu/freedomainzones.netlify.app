@@ -26,10 +26,10 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 %w(
+  any-level
   1-level
-  2-level
 ).each do |filter|
-  proxy "/filtered/#{filter}.html", '/index.html', locals: {
+  proxy "/#{filter}.html", '/index.html', locals: {
       filter: filter,
   }
 end
