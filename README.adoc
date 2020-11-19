@@ -1,6 +1,8 @@
 = Free Domain Zones
 
-This is a source code for https://freedomainzones.netlify.app/
+This is a source code for
+link:https://freedomainzones.tk[freedomainzones.tk] /
+link:https://freedomainzones.netlify.app/[freedomainzones.netlify.app]
 
 The website contains list of currently operating free domain zones that provide
 either an interface to set up custom NS records
