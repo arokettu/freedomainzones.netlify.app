@@ -1,0 +1,11 @@
+[[redirects]]
+from = '/filtered/1-level.html'
+to = '/1-level.html'
+status = 301
+force = true
+
+[[redirects]]
+from = '/filtered/2-level.html'
+to = '/'
+status = 301
+force = true

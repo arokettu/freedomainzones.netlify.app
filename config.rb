@@ -40,6 +40,11 @@ data.services.keys.each do |service|
   }, ignore: true
 end
 
+# Redirects
+
+redirect 'filtered/1-level.html', to: '/1-level.html'
+redirect 'filtered/2-level.html', to: '/'
+
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
