@@ -41,36 +41,37 @@
     - else
       = link_to 'Up to 2 level domains', '/index.html'
 
-  %table.ui.celled.table.unstackable
-    %thead
-      %tr
-        %th Zone
-        %th NS Records
-        %th URL forwarding
-        %th External DNS
-        %th Service
-    %tbody
-      - data.zones.keys.select(&filter_callback).sort.each do |name|
-        - zone = data.zones[name]
-        - service = data.services[zone.service]
+  .table-wrapper
+    %table.ui.celled.table.unstackable
+      %thead
         %tr
-          / Zone
-          %td= name
-          / NS Records
-          - if service.record_types
-            %td= service.record_types.join(', ')
-          - else
-            %td
-              %i none (only external servers)
-          / URL forwarding
-          - if service.forwarding
-            %td.yes ✓
-          - else
-            %td.no ✗
-          / External DNS
-          - if service.custom_ns
-            %td.yes ✓
-          - else
-            %td.no ✗
-          / Service
-          %td= link_to service.name, "/services/#{zone.service}.html"
+          %th Zone
+          %th NS Records
+          %th URL forwarding
+          %th External DNS
+          %th Service
+      %tbody
+        - data.zones.keys.select(&filter_callback).sort.each do |name|
+          - zone = data.zones[name]
+          - service = data.services[zone.service]
+          %tr
+            / Zone
+            %td= name
+            / NS Records
+            - if service.record_types
+              %td= service.record_types.join(', ')
+            - else
+              %td
+                %i none (only external servers)
+            / URL forwarding
+            - if service.forwarding
+              %td.yes ✓
+            - else
+              %td.no ✗
+            / External DNS
+            - if service.custom_ns
+              %td.yes ✓
+            - else
+              %td.no ✗
+            / Service
+            %td= link_to service.name, "/services/#{zone.service}.html"
