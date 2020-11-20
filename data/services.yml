@@ -3,6 +3,7 @@ freenom:
   url:          https://www.freenom.com/
   custom_ns:    true
   record_types: [A, AAAA, CNAME, LOC, MX, NAPTR, RP, TXT]
+  forwarding:   true
 
 nic.eu.org:
   name:         EU.org
@@ -29,10 +30,11 @@ venez:
   name:         venez.fr
   url:          https://www.venez.fr/
   record_types: [A]
+  forwarding:   true
   notes:
     Regional restrictions.
     Only french interface.
-    Records can only be set after a week.
+    IP records can only be set after a week.
 
 nom.za:
   name:         nom.za

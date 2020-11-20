@@ -17,6 +17,9 @@
         %td
           %i none (only external servers)
     %tr
+      %td URL forwarding
+      %td= service.forwarding ? 'yes' : 'no'
+    %tr
       %td External DNS servers
       %td= service.custom_ns ? 'yes' : 'no'
     - if service.notes
