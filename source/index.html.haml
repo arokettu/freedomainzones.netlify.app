@@ -55,23 +55,23 @@
           - zone = data.zones[name]
           - service = data.services[zone.service]
           %tr
-            / Zone
+            -# Zone
             %td= name
-            / NS Records
+            -# NS Records
             - if service.record_types
               %td= service.record_types.join(', ')
             - else
               %td
                 %i none (only external servers)
-            / URL forwarding
+            -# URL forwarding
             - if service.forwarding
               %td.yes ✓
             - else
               %td.no ✗
-            / External DNS
+            -# External DNS
             - if service.custom_ns
               %td.yes ✓
             - else
               %td.no ✗
-            / Service
+            -# Service
             %td= link_to service.name, "/services/#{zone.service}.html"
