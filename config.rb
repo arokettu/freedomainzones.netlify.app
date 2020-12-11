@@ -13,7 +13,7 @@ config[:sass_assets_paths] << File.dirname(__FILE__) + '/node_modules'
 
 config[:commit] = {
   id: `git rev-parse --short HEAD`,
-  time: Time.parse(`git log -1 --format=%cd`),
+  time: Time.parse(`git log -1 --format=%cd --date=iso`),
 }
 
 # Layouts
