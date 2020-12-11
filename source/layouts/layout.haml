@@ -26,4 +26,5 @@
       %br
       = link_to 'Our GitLab repository', 'https://gitlab.com/sandfox/freedomainzones.netlify.app'
       %br
-      = Time.now.utc.strftime('Built on %b %-d, %Y at %k:%M UTC')
+      = "Revision #{config[:commit][:id]}"
+      = config[:commit][:time].utc.strftime('on %b %-d, %Y at %k:%M UTC')

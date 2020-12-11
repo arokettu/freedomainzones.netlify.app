@@ -11,6 +11,11 @@ end
 config[:frontmatter_delims][:yaml] << %w(... ...)
 config[:sass_assets_paths] << File.dirname(__FILE__) + '/node_modules'
 
+config[:commit] = {
+  id: `git rev-parse --short HEAD`,
+  time: Time.parse(`git log -1 --format=%cd`),
+}
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
