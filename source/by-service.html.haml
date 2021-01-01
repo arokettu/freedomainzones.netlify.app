@@ -1,0 +1,28 @@
+- @index = true
+- @title = 'Free Zones by Service'
+
+.ui.container
+  = partial :index_top
+
+.ui.container
+  = partial :index_menu, locals: { filter: 'by-service' }
+
+  .table-wrapper
+    %table.ui.celled.table.unstackable
+      %thead
+        %tr
+          %th Service
+          %th NS Records
+          %th URL forwarding
+          %th External DNS
+          %th Zones
+      %tbody
+        - data.services.keys.sort{ |a, b| data.services[a].name.casecmp data.services[b].name }.each do |id|
+          - service = data.services[id]
+          %tr
+            -# Service
+            %td= link_to service.name, "/services/#{id}.html"
+
+            = partial :index_row_params, locals: { service: service }
+
+            %td{ style: 'max-width: 400px' }= data.zones.select{ |_, zone| zone.service == id }.keys.sort.join(', ')

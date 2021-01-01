@@ -1,0 +1,12 @@
+%p
+  = partial :index_menu_item,
+    locals: { filter: filter, expect: 'any-level', caption: 'All', link: '/any-level.html' }
+  &bull;
+  = partial :index_menu_item,
+    locals: { filter: filter, expect: '1-level', caption: 'Only top level domains', link: '/1-level.html' }
+  &bull;
+  = partial :index_menu_item,
+    locals: { filter: filter, expect: '2-level', caption: 'Up to 2 level domains', link: '/index.html' }
+  &bull;
+  = partial :index_menu_item,
+    locals: { filter: filter, expect: 'by-service', caption: 'By service', link: '/by-service.html' }

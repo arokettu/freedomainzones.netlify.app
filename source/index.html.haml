@@ -15,31 +15,10 @@
   - raise 'Unknown filter'
 
 .ui.container
-  %p
-    Here you can find a list of known currently functioning free domain zones.
-    Feel free to leave your feedback, submit new zones, and fix inaccurate information
-    <a href="https://gitlab.com/sandfox/freedomainzones.netlify.app">on our GitLab page</a>.
+  = partial :index_top
 
 .ui.container
-  %p
-    - if filter == 'any-level'
-      All
-    - else
-      = link_to 'All', '/any-level.html'
-
-    &bull;
-
-    - if filter == '1-level'
-      Only top level domains
-    - else
-      = link_to 'Only top level domains', '/1-level.html'
-
-    &bull;
-
-    - if filter == '2-level'
-      Up to 2 level domains
-    - else
-      = link_to 'Up to 2 level domains', '/index.html'
+  = partial :index_menu, locals: { filter: filter }
 
   .table-wrapper
     %table.ui.celled.table.unstackable
@@ -57,21 +36,8 @@
           %tr
             -# Zone
             %td= name
-            -# NS Records
-            - if service.record_types
-              %td= service.record_types.join(', ')
-            - else
-              %td
-                %i none (only external servers)
-            -# URL forwarding
-            - if service.forwarding
-              %td.yes ✓
-            - else
-              %td.no ✗
-            -# External DNS
-            - if service.custom_ns
-              %td.yes ✓
-            - else
-              %td.no ✗
+
+            = partial :index_row_params, locals: { service: service }
+
             -# Service
             %td= link_to service.name, "/services/#{zone.service}.html"
