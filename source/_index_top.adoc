@@ -1,0 +1,3 @@
+Here you can find a list of known currently functioning free domain zones.
+Feel free to leave your feedback, submit new zones, and fix inaccurate information
+https://gitlab.com/sandfox/freedomainzones.netlify.app[on our GitLab page].

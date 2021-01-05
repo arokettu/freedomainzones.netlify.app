@@ -8,6 +8,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    asciidoctor (2.0.12)
     autoprefixer-rails (9.8.6.5)
       execjs
     backports (3.18.2)
@@ -102,6 +103,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  asciidoctor (~> 2.0)
   haml (~> 5.1)
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
@@ -109,4 +111,4 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 BUNDLED WITH
-   2.2.0
+   2.2.4
