@@ -8,7 +8,7 @@
       %td= link_to service.url, service.url
     %tr
       %td Available zones
-      %td= data.zones.filter{ |_, zone| zone.service == service_name }.keys.join(', ')
+      %td= data.zones.filter{ |_, zone| zone.service == service_name }.keys.sort.join(', ')
     %tr
       %td Available NS record types
       - if service.record_types
