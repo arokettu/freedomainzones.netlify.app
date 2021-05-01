@@ -7,3 +7,5 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 
 gem 'asciidoctor', '~> 2.0'
 gem 'haml', '~> 5.1'
+
+gem 'webrick'
