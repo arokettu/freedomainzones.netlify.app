@@ -19,7 +19,7 @@ iz.rs:
 
 pp.ua:
   name:         pp.ua
-  url:          http://pp.ua/
+  url:          https://pp.ua/
   custom_ns:    true
   record_types: ["<i>depends on a final registrar</i>"]
   notes:
