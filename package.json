@@ -1,6 +1,6 @@
 {
   "license": "CC-BY-4.0",
   "dependencies": {
-    "semantic-ui-sass": "^2.4.2"
+    "fomantic-ui-sass": "^2.4.2"
   }
 }
