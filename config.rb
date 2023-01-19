@@ -39,7 +39,7 @@ page '/*.txt', layout: false
   }
 end
 
-data.services.keys.each do |service|
+@app.data.services.keys.each do |service|
   proxy "/services/#{service}.html", '/services.html', locals: {
       service_name: service,
   }, ignore: true
