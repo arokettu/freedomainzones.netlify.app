@@ -1,7 +1,7 @@
 = Free Domain Zones
 
 This is a source code for
-link:https://freedomainzones.tk[freedomainzones.tk] /
+link:https://freedomainzones.eu.org[freedomainzones.eu.org] /
 link:https://freedomainzones.netlify.app/[freedomainzones.netlify.app]
 
 The website contains list of currently operating free domain zones that provide

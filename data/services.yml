@@ -4,6 +4,9 @@ freenom:
   custom_ns:    true
   record_types: [A, AAAA, CNAME, LOC, MX, NAPTR, RP, TXT]
   forwarding:   true
+  notes:
+    Too easy to lose your domain and not get it back.
+    Freenom is known for its dishonest business practices.
 
 nic.eu.org:
   name:         EU.org
