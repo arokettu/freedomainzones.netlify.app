@@ -3,6 +3,10 @@
 
 .ui.container
   %table.ui.celled.definition.table
+    - if service.archive
+      %tr.negative
+        %td Archived
+        %td= service.archive
     %tr
       %td URL
       %td= link_to service.url, service.url
