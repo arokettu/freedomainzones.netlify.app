@@ -1,4 +1,5 @@
 freenom:
+  archive:      Not accepting new domain registrations as of March 2023.
   name:         Freenom
   url:          https://www.freenom.com/
   custom_ns:    true
