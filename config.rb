@@ -45,6 +45,10 @@ end
   }, ignore: true
 end
 
+proxy "/by-service-archive.html", '/by-service.html', locals: {
+    archive: true,
+}
+
 # Redirects
 
 redirect 'filtered/1-level.html', to: '/1-level.html'

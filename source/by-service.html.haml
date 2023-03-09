@@ -1,11 +1,12 @@
 - @index = true
 - @title = 'Free Zones by Service'
+- archive ||= false
 
 .ui.container
   = partial :index_top
 
 .ui.container
-  = partial :index_menu, locals: { filter: 'by-service' }
+  = partial :index_menu, locals: { filter: archive ? 'by-service-archive' : 'by-service' }
 
   .table-wrapper
     %table.ui.celled.table.unstackable
@@ -19,10 +20,11 @@
       %tbody
         - data.services.keys.sort{ |a, b| data.services[a].name.casecmp data.services[b].name }.each do |id|
           - service = data.services[id]
-          %tr
-            -# Service
-            %td= link_to service.name, "/services/#{id}.html"
+          - if (!!service.archive) == archive
+            %tr
+              -# Service
+              %td= link_to service.name, "/services/#{id}.html"
 
-            = partial :index_row_params, locals: { service: service }
+              = partial :index_row_params, locals: { service: service }
 
-            %td{ style: 'max-width: 400px' }= data.zones.select{ |_, zone| zone.service == id }.keys.sort.join(', ')
+              %td{ style: 'max-width: 400px' }= data.zones.select{ |_, zone| zone.service == id }.keys.sort.join(', ')
