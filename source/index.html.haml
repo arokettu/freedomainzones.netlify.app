@@ -30,14 +30,20 @@
           %th External DNS
           %th Service
       %tbody
+        - any = false
         - data.zones.keys.select(&filter_callback).sort.each do |name|
           - zone = data.zones[name]
           - service = data.services[zone.service]
+          - unless service.archive
+            - any = true
+            %tr
+              -# Zone
+              %td= name
+
+              = partial :index_row_params, locals: { service: service }
+
+              -# Service
+              %td= link_to service.name, "/services/#{zone.service}.html"
+        - unless any
           %tr
-            -# Zone
-            %td= name
-
-            = partial :index_row_params, locals: { service: service }
-
-            -# Service
-            %td= link_to service.name, "/services/#{zone.service}.html"
+            %td{colspan: 5} No zones for this filter
