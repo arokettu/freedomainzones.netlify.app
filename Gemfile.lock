@@ -88,7 +88,9 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    sassc (2.4.0)
+    sassc (2.1.0)
+      ffi (~> 1.9)
+    sassc (2.1.0-x86_64-linux)
       ffi (~> 1.9)
     servolux (0.13.0)
     temple (0.9.1)
@@ -111,6 +113,7 @@ DEPENDENCIES
   haml
   middleman (~> 4.4.3)
   middleman-autoprefixer (~> 3.0)
+  sassc (~> 2.1.0)
   tzinfo-data
   wdm (~> 0.1)
   webrick
