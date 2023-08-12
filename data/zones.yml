@@ -182,3 +182,9 @@
   service: ipquick
 .fdns.uk:
   service: ipquick
+
+# cloudns
+.cloudns.ph:
+  service: cloudns
+.cloudns.nz:
+  service: cloudns
