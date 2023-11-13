@@ -1,6 +1,6 @@
 -# NS Records
 - if service.record_types
-  %td= service.record_types.join(', ')
+  %td= raw service.record_types.join(', ')
 - else
   %td
     %i none (only external servers)
