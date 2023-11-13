@@ -16,7 +16,7 @@
     %tr
       %td Available NS record types
       - if service.record_types
-        %td= raw service.record_types.join(', ')
+        %td= service.record_types.join(', ').html_safe
       - else
         %td
           %i none (only external servers)
