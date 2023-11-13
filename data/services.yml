@@ -56,3 +56,5 @@ cloudns:
   url:          https://www.cloudns.net/
   record_types: [A, AAAA, MX, CNAME, TXT, SPF, NS, SRV, ALIAS, RP, SSHFP, CAA, TLSA, DS, CERT, HINFO, LOC, DNAME, SMIMEA, OPENPGPKEY]
   forwarding:   true
+  notes:
+    Zones inactive for a month will be deleted.
