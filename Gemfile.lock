@@ -95,7 +95,7 @@ GEM
       ffi (~> 1.9)
     servolux (0.13.0)
     temple (0.10.2)
-    thor (1.2.2)
+    thor (1.4.0)
     tilt (2.0.11)
     toml (0.3.0)
       parslet (>= 1.8.0, < 3.0.0)
