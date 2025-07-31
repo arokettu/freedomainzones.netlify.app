@@ -7,6 +7,7 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 gem 'concurrent-ruby', '1.3.4'
 gem 'bigdecimal'
 gem 'mutex_m'
+gem 'base64'
 
 gem 'asciidoctor', '~> 2.0'
 gem 'haml'
