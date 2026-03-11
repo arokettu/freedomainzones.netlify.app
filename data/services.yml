@@ -1,7 +1,7 @@
 freenom:
   archive:      Not accepting new domain registrations as of March 2023.
   name:         Freenom
-  url:          https://www.freenom.com/
+  url:          https://my.freenom.com/
   custom_ns:    true
   record_types: [A, AAAA, CNAME, LOC, MX, NAPTR, RP, TXT]
   forwarding:   true
@@ -30,7 +30,7 @@ pp.ua:
     Several accredited registrars available.
 
 venez:
-  archive:      Not accepting new domain registrations as of March 2026.
+  archive:      Defunct as of April 2025.
   name:         venez.fr
   url:          https://www.venez.fr/
   record_types: [A]
