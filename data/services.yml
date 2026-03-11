@@ -30,6 +30,7 @@ pp.ua:
     Several accredited registrars available.
 
 venez:
+  archive:      Not accepting new domain registrations as of March 2026.
   name:         venez.fr
   url:          https://www.venez.fr/
   record_types: [A]
